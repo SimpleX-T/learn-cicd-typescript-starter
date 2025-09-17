@@ -1,4 +1,4 @@
-name: ci
+name: first-yaml
 
 on:
   pull_request:
@@ -19,4 +19,4 @@ jobs:
           node-version: 18
 
       - name: Force Failure
-        run: (exit 1)
+        run: node --version
