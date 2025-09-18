@@ -9,7 +9,7 @@ const correctTempHeader: IncomingHttpHeaders = {
 const incorrectTempHeader: IncomingHttpHeaders = {};
 
 test("Bearer token is provided", () => {
-  expect(getAPIKey(correctTempHeader)).toBe("Test");
+  expect(getAPIKey(correctTempHeader)).toBe("ApiKey");
 });
 
 test("No Bearer token", () => {
